@@ -1,6 +1,6 @@
 # How to run this script
 
-- 1 . clone the repo 
+- 1. clone the repo using the command below
 
 git clone https://github.com/abrahamdominic/portscanner.git
 
