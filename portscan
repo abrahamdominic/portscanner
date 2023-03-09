@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Enter the starting IP address:"
+read FIRSTIP
+echo "Enter the last octet of the last IP address:"
+read LASTOctetIP
+echo "Enter the port number you want to scan for:"
+read port
+nmap -sT $FirstIP-$LastOctetIP -p $port >/dev/null -oG MySQLscan
+cat MySQLscan | grep open > MySQLcan2
+cat MySQLscan2
